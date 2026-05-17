@@ -5,7 +5,7 @@
 ══════════════════════════════════════ */
 const CONFIG = {
   whatsappNumber: '4915234567890',   // Replace with real WhatsApp number (country code + number, no +)
-  emailTo: 'xcarbontechnik@gmail.com', // Replace with real email address
+  emailTo: 'contact@xcarbontechnik.com', // Replace with real email address
   // To enable real email sending, sign up at https://formspree.io and paste your form ID below:
   formspreeId: '',  // e.g. 'xpznqrly'
 };
