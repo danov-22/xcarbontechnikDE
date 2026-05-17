@@ -14,11 +14,11 @@ const CONFIG = {
    GALLERY DATA
 ══════════════════════════════════════ */
 const GALLERY_IMAGES = [
-  { src: 'images/cylinder-red.png',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
-  { src: 'images/cylinder-parts.png',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
+  { src: 'images/front.png',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
+  { src: 'images/shell.png',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
   { src: 'images/valve-top.jpg',       caption: 'ISO 10297 Certified Valve Assembly — Top View' },
-  { src: 'images/valve-closeup.png',   caption: 'Precision Valve Detail — ISO 10297, Made in France' },
-  { src: 'images/cylinder-car.jpg',    caption: 'Field Application — Type 4 CNG Cylinder in Use' },
+  { src: 'images/closeup.png',   caption: 'Precision Valve Detail — ISO 10297, Made in France' },
+  { src: 'images/side.jpg',    caption: 'Field Application — Type 4 CNG Cylinder in Use' },
 ];
 
 /* ══════════════════════════════════════
