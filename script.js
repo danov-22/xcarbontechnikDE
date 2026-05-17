@@ -5,7 +5,7 @@
 ══════════════════════════════════════ */
 const CONFIG = {
   whatsappNumber: '4915234567890',   // Replace with real WhatsApp number (country code + number, no +)
-  emailTo: 'info@xcarbontechnik.de', // Replace with real email address
+  emailTo: 'xcarbontechnik@gmail.com', // Replace with real email address
   // To enable real email sending, sign up at https://formspree.io and paste your form ID below:
   formspreeId: '',  // e.g. 'xpznqrly'
 };
@@ -14,11 +14,11 @@ const CONFIG = {
    GALLERY DATA
 ══════════════════════════════════════ */
 const GALLERY_IMAGES = [
-  { src: 'images/front.png',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
-  { src: 'images/shell.png',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
-  { src: 'images/valve-top.jpg',       caption: 'ISO 10297 Certified Valve Assembly — Top View' },
-  { src: 'images/closeup.png',   caption: 'Precision Valve Detail — ISO 10297, Made in France' },
-  { src: 'images/side.jpg',    caption: 'Field Application — Type 4 CNG Cylinder in Use' },
+  { src: 'image/front.png',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
+  { src: 'image/shell.png',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
+  { src: 'image/valve-top.jpg',       caption: 'ISO 10297 Certified Valve Assembly — Top View' },
+  { src: 'image/closeup.png',   caption: 'Precision Valve Detail — ISO 10297, Made in France' },
+  { src: 'image/side.jpg',    caption: 'Field Application — Type 4 CNG Cylinder in Use' },
 ];
 
 /* ══════════════════════════════════════
