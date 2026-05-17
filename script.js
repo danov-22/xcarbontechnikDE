@@ -18,7 +18,7 @@ const GALLERY_IMAGES = [
   { src: 'image/shell.png',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
   { src: 'image/valve-top.jpg',       caption: 'ISO 10297 Certified Valve Assembly — Top View' },
   { src: 'image/closeup.png',   caption: 'Precision Valve Detail — ISO 10297, Made in France' },
-  { src: 'image/side.jpg',    caption: 'Field Application — Type 4 CNG Cylinder in Use' },
+  { src: 'image/side.png',    caption: 'Field Application — Type 4 CNG Cylinder in Use' },
 ];
 
 /* ══════════════════════════════════════
