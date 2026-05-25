@@ -55,6 +55,13 @@ nav {
   transition: background var(--transition);
 }
 
+/* ADD THIS HERE */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -79,15 +86,19 @@ nav {
   transform: scale(1.05);
 }
 
-.nav-logo svg { width: 38px; height: 38px; flex-shrink: 0; }
-
 .nav-logo-text {
   font-size: 1.15rem;
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--white);
+
+  text-decoration: none;
+  cursor: pointer;
 }
-.nav-logo-text span { color: var(--red); }
+
+.nav-logo-text span {
+  color: var(--red);
+}
 
 .nav-links {
   display: flex;
