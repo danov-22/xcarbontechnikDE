@@ -62,15 +62,20 @@ nav {
   text-decoration: none;
 }
 
-.nav-logo img {
+.nav-logo-image {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-logo-image img {
   height: 42px;
   width: auto;
   display: block;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.nav-logo img:hover {
+.nav-logo-image img:hover {
   transform: scale(1.05);
 }
 
