@@ -14,11 +14,11 @@ const CONFIG = {
    GALLERY DATA
 ══════════════════════════════════════ */
 const GALLERY_IMAGES = [
-  { src: 'image/front_cylinder.png',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
-  { src: 'image/shell_and_liner.png',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
-  { src: 'image/top_valve.jpg',       caption: 'Valve Assembly — Top View' },
-  { src: 'image/side_valve.png',   caption: 'Precision Valve Detail' },
-  { src: 'image/side_cylinder.png',    caption: 'Type 4 CNG Cylinder - Side View' },
+  { src: 'image/front_cylinder.webp',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
+  { src: 'image/shell_and_liner.webp',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
+  { src: 'image/top_valve.webp',       caption: 'Valve Assembly — Top View' },
+  { src: 'image/side_valve.webp',   caption: 'Precision Valve Detail' },
+  { src: 'image/side_cylinder.webp',    caption: 'Type 4 CNG Cylinder - Side View' },
 ];
 
 /* ══════════════════════════════════════
