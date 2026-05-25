@@ -262,3 +262,26 @@ window.addEventListener('scroll', () => {
     nav.style.background = 'rgba(17, 20, 24, 0.92)';
   }
 }, { passive: true });
+
+/* ══════════════════════════════════════
+   LOGO MODAL
+══════════════════════════════════════ */
+
+const logoTrigger = document.querySelector('.logo-trigger');
+const logoModal = document.getElementById('logoModal');
+const logoClose = document.querySelector('.logo-close');
+
+logoTrigger.addEventListener('click', (e) => {
+  e.preventDefault();
+  logoModal.classList.add('active');
+});
+
+logoClose.addEventListener('click', () => {
+  logoModal.classList.remove('active');
+});
+
+logoModal.addEventListener('click', (e) => {
+  if (e.target === logoModal) {
+    logoModal.classList.remove('active');
+  }
+});
