@@ -16,7 +16,7 @@ const CONFIG = {
 const GALLERY_IMAGES = [
   { src: 'image/front_new_black.png',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
   { src: 'image/shell.png',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
-  { src: 'image/valve-top.jpg',       caption: 'Valve Assembly — Top View' },
+  { src: 'image/top_view_black_valve.jpg',       caption: 'Valve Assembly — Top View' },
   { src: 'image/black_valve.png',   caption: 'Precision Valve Detail' },
   { src: 'image/side_new_black.png',    caption: 'Type 4 CNG Cylinder - Side View' },
 ];
