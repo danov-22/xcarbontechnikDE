@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Temporarily Unavailable</title>
+
+    <link rel="stylesheet" href="maintenance.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="terminal-content">
+                <p>> Building Website...</p>
+                <p>> Loading Content...</p>
+                <p>> Configuring Features...</p>
+                <p>> Launching Soon<span class="cursor">|</span></p>
+            </div>
+
+        </div>
+
+            <h1>Status: In Progress</h1>
+
+            <p>
+                Finalizing Setup.
+            </p>
+
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <p class="game-text">
+            While you wait, help us catch the bug
+        </p>
+
+    </div>
+
+    <div id="runaway-emoji">🪲</div>
+
+    <script>
+
+        const emoji = document.getElementById("runaway-emoji");
+
+        document.addEventListener("mousemove", (e) => {
+
+            const rect = emoji.getBoundingClientRect();
+
+            const emojiX = rect.left + rect.width / 2;
+            const emojiY = rect.top + rect.height / 2;
+
+            const dx = e.clientX - emojiX;
+            const dy = e.clientY - emojiY;
+
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < 150) {
+
+                const maxX = window.innerWidth - rect.width;
+                const maxY = window.innerHeight - rect.height;
+
+                const newX = Math.random() * maxX;
+                const newY = Math.random() * maxY;
+
+                emoji.style.left = `${newX}px`;
+                emoji.style.top = `${newY}px`;
+            }
+
+        });
+
+        emoji.addEventListener("click", () => {
+
+            alert("Congratulations. One less bug to worry about 🪲");
+
+        });
+
+    </script>
+
+</body>
+</html>
