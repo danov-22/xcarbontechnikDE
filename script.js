@@ -14,9 +14,9 @@ const CONFIG = {
    GALLERY DATA
 ══════════════════════════════════════ */
 const GALLERY_IMAGES = [
-  { src: 'image/front_cylinder.webp',    caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
-  { src: 'image/shell_and_liner.webp',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
-  { src: 'image/side_cylinder.webp',    caption: 'Type 4 CNG Cylinder - Side View' },
+  { src: 'images/front_cylinder.webp',   caption: 'Xcarbontechnik Type 4 CNG Cylinder — Full Product View' },
+  { src: 'images/shell_and_liner.webp',  caption: 'Outer Shell (HDPE Liner) and Carbon Fibre Body — Side by Side' },
+  { src: 'images/side_cylinder.webp',    caption: 'Type 4 CNG Cylinder - Side View' },
 ];
 
 /* ══════════════════════════════════════
