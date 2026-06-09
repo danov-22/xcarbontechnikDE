@@ -48,11 +48,15 @@ nav {
   justify-content: space-between;
   padding: 0 5%;
   height: 68px;
-  background: rgba(17, 20, 24, 0.92);
+  background: rgba(255,255,255,1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid #e5e7eb;
   transition: background var(--transition);
+}
+
+nav.scrolled {
+  background: rgba(255,255,255,1);
 }
 
 .nav-brand {
@@ -75,7 +79,7 @@ nav {
 }
 
 .nav-logo-image img {
-  height: 42px;
+  height: 65px;
   width: auto;
   display: block;
   transition: transform 0.3s ease;
@@ -86,10 +90,11 @@ nav {
 }
 
 .nav-logo-text {
+  font-family: 'League Spartan', sans-serif;
   font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: var(--white);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--black);
 
   text-decoration: none;
   cursor: pointer;
@@ -106,7 +111,7 @@ nav {
 }
 
 .nav-links a {
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.92);
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
@@ -114,6 +119,7 @@ nav {
   text-transform: uppercase;
   transition: color var(--transition);
 }
+
 .nav-links a:hover { color: var(--red-light); }
 
 .nav-cta {
@@ -135,9 +141,44 @@ nav {
 .hamburger span {
   display: block;
   width: 24px; height: 2px;
-  background: var(--white);
+  background: #111418;
   border-radius: 2px;
   transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    position: relative;
+  }
+
+  .nav-logo-text {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nav-logo-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+
+@media (max-width: 480px) {
+  .nav-logo-text {
+    font-size: 0.9rem;
+  }
 }
 
 /* ══════════════════════════════════════
@@ -818,6 +859,28 @@ footer {
 .footer-brand strong { color: var(--white); }
 
 .footer-copy { color: rgba(255,255,255,0.3); font-size: 0.78rem; }
+
+@media (max-width: 768px) {
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer-logo-image {
+    position: static;
+  }
+
+  .footer-logo-text {
+    position: static;
+    margin: 0;
+  }
+
+}
 
 /* ══════════════════════════════════════
    LIGHTBOX

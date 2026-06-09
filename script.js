@@ -253,13 +253,9 @@ sections.forEach((s) => sectionObserver.observe(s));
    NAV BACKGROUND on scroll
 ══════════════════════════════════════ */
 window.addEventListener('scroll', () => {
-  const nav = document.querySelector('nav');
-  if (window.scrollY > 40) {
-    nav.style.background = 'rgba(10, 13, 16, 0.97)';
-  } else {
-    nav.style.background = 'rgba(17, 20, 24, 0.92)';
-  }
-}, { passive: true });
+  document.querySelector('nav')
+    .classList.toggle('scrolled', window.scrollY > 40);
+});
 
 /* ══════════════════════════════════════
    LOGO MODAL
