@@ -842,19 +842,27 @@ section { padding: 100px 8%; }
 /* ══════════════════════════════════════
    FOOTER
 ══════════════════════════════════════ */
-footer {
-  background: #0A0D10;
-  padding: 36px 8%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
+  footer {
+    background: #0A0D10;
+    padding: 36px 8%;
+    border-top: 1px solid rgba(255,255,255,0.06);
 
-  .footer-brand { display: flex; align-items: center; gap: 10px; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
   .footer-brand span { color: rgba(255,255,255,0.55); font-size: 0.85rem; }
+  
   .footer-brand strong { color: var(--white); }
 
   .footer-copy { color: rgba(255,255,255,0.3); font-size: 0.78rem; }
@@ -867,39 +875,46 @@ footer {
     gap: 6px;
   }
 
-@media (max-width: 768px) {
-
-.footer-brand {
-  display: flex;
-  background-color: #0A0D10;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-  .footer-brand .nav-logo-image {
-    margin-bottom: 12px;
-  }
-
-  .footer-brand .nav-logo-image img {
-    height: 65px;
-    width: auto;
-  }
-
-  .footer-logo-image {
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-
-  }
-
   .footer-logo-image img {
-    height: 50px;
-    width: auto;
+    display: block;
+    max-width: 100px;
+    width: 80px;
+    height: auto;
+  }
+  
+  .footer-logo-image {
+    display: flex;
+    justify-content: center;
   }
 
-}
+  @media (max-width: 768px) {
+
+  .footer-brand {
+    display: flex;
+    background-color: #0A0D10;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+    .footer-brand .nav-logo-image {
+      margin-bottom: 12px;
+    }
+
+    .footer-brand .nav-logo-image img {
+      max-width: 120px;
+      width: 100%;
+      height: auto;
+    }
+    
+    .footer-logo-image img {
+    width: 80px !important;
+    max-width: 80px !important;
+    height: auto !important;
+    }
+
+  }
 
 
 
