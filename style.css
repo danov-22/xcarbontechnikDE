@@ -42,7 +42,7 @@ p { color: #3D4552; }
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 900;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,7 +53,7 @@ nav {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid #e5e7eb;
   transition: background var(--transition);
-}
+} 
 
 nav.scrolled {
   background: rgba(255,255,255,1);
@@ -91,7 +91,7 @@ nav.scrolled {
 
 .nav-logo-text {
   font-family: 'League Spartan', sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--black);
@@ -149,7 +149,7 @@ nav.scrolled {
 @media (max-width: 768px) {
 
   nav {
-    position: relative;
+    position: fixed;
   }
 
   .nav-logo-text {
@@ -239,7 +239,7 @@ nav.scrolled {
   background-image: var(--hex-pattern);
   position: relative;
   overflow: hidden;
-  padding-top: 68px;
+  padding-top: 30px;
 }
 
 #hero::before {
@@ -853,34 +853,55 @@ footer {
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-.footer-brand { display: flex; align-items: center; gap: 10px; }
-.footer-brand svg { width: 28px; height: 28px; }
-.footer-brand span { color: rgba(255,255,255,0.55); font-size: 0.85rem; }
-.footer-brand strong { color: var(--white); }
+  .footer-brand { display: flex; align-items: center; gap: 10px; }
+  .footer-brand span { color: rgba(255,255,255,0.55); font-size: 0.85rem; }
+  .footer-brand strong { color: var(--white); }
 
-.footer-copy { color: rgba(255,255,255,0.3); font-size: 0.78rem; }
+  .footer-copy { color: rgba(255,255,255,0.3); font-size: 0.78rem; }
+
+  .footer-address {
+    color: rgba(255,255,255,0.3);
+    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
 
 @media (max-width: 768px) {
 
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    text-align: center;
+.footer-brand {
+  display: flex;
+  background-color: #0A0D10;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+  .footer-brand .nav-logo-image {
+    margin-bottom: 12px;
+  }
+
+  .footer-brand .nav-logo-image img {
+    height: 65px;
+    width: auto;
   }
 
   .footer-logo-image {
-    position: static;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+
   }
 
-  .footer-logo-text {
-    position: static;
-    margin: 0;
+  .footer-logo-image img {
+    height: 50px;
+    width: auto;
   }
 
 }
+
+
 
 /* ══════════════════════════════════════
    LIGHTBOX
